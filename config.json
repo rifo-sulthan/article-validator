@@ -1,0 +1,51 @@
+{
+    "input_file": "input_urls.xlsx",
+    "output_file_step1": "results_step1_prefilter.xlsx",
+    "output_file_step2": "results_step2_validated.xlsx",
+    "model_path": "cross-encoder-nli-deberta-v3-base",
+    "device_id": -1,
+    "candidate_labels": [
+        "Education",
+        "Standardized Testing",
+        "College Admissions",
+        "Test Preparation",
+        "Academic Performance",
+        "Not Related"
+    ],
+    "positive_labels": [
+        "Education",
+        "Standardized Testing",
+        "College Admissions",
+        "Test Preparation",
+        "Academic Performance"
+    ],
+    "step1_prefilter": {
+        "force_valid_keywords": [
+            "SAT scores",
+            "SAT results",
+            "SAT test",
+            "SAT exam",
+            "SAT prep",
+            "SAT preparation",
+            "SAT composite",
+            "college board SAT",
+            "SAT percentile",
+            "SAT average",
+            "SAT cutoff",
+            "SAT math",
+            "SAT reading",
+            "SAT writing",
+            "SAT comparison"
+        ]
+    },
+    "step2_scraping": {
+        "confidence_threshold": 0.6,
+        "timeout_seconds": 25,
+        "max_retries": 2,
+        "max_workers": 4,
+        "user_agents": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        ]
+    }
+}

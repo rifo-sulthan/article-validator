@@ -1,0 +1,11 @@
+
+requests==2.31.0
+beautifulsoup4==4.12.2
+pandas==2.1.0
+cloudscraper==1.2.71
+playwright==1.40.0
+transformers==4.35.0
+torch==2.1.0
+openpyxl
+python-dotenv
+openai
