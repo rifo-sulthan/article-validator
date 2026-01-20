@@ -1,4 +1,4 @@
-# Article Validation System - Engineering Handover
+# Article Validation System
 
 This package contains the "2-Filtration System" for validating news articles. The system is designed to be efficient by filtering low-quality candidates early using metadata, before performing expensive content scraping on the remaining candidates.
 
@@ -51,7 +51,7 @@ We have added a prototype script to help generate `config.json` settings using n
 
 **Usage:**
 
-1.  Set your API key in `.env` (created effectively inside `Engineering_Handover/`).
+1.  Set your API key in `.env` (currently using Open router `tngtech/deepseek-r1t2-chimera:free` API for testing ).
 2.  Run the script:
     ```bash
     python config_generator.py "I want to find golf gift guides"
@@ -70,3 +70,4 @@ We have added a prototype script to help generate `config.json` settings using n
 *   `step2_validate.py`: Script for scraping and validation.
 *   `core_validator.py`: The core logic class containing the scraping methods and classification wrapper.
 *   `classifier_wrapper.py`: A wrapper around the HuggingFace pipeline.
+
